@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+#loader{
+    width: 100vw;
+    height:100vh;
+    display: flex;    
+    background-color: black;
+    opacity:0.8;
+    justify-content: center;
+}
+
+#spinner{
+    background-color:whitesmoke; 
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    animation-duration: 2000ms;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-name: spinIt
+}
+
+@keyframes spinIt {
+    0% { transform: rotate(0deg)}
+    50% { transform: rotate(180deg); opacity: 0.5 } 
+    100% { transform: rotate(360deg)}
+
+}
